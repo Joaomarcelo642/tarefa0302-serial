@@ -69,7 +69,7 @@ int main() {
             while ((c = getchar_timeout_us(0)) != PICO_ERROR_TIMEOUT) {  // Lê todo o buffer para evitar "atraso"
                 
                 if (c == '\n' || c == '\r') {
-                    continue;  // Ignora caracteres de nova linha e retorno de carro
+                    continue; 
                 }
     
                 printf("Recebido: '%c'\n", c);
